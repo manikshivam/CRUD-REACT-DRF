@@ -7,17 +7,6 @@ from .views import (
 
 
 urlpatterns = [
-
-    path(
-        "todos/",
-        todos,
-        name="todos"
-    ),
-
-    path(
-        "todos/<int:id>/",
-        todo_detail,
-        name="todo-detail"
-    ),
-
+    path("todos/",todos,name="todos"),
+    path("todos/<int:id>/",todo_detail,name="todo-detail"),
 ]
